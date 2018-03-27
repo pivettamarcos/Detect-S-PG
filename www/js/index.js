@@ -28,6 +28,7 @@ $('#btnApplyQuestionnaire').click(function() {
     localStorage.currentQuestionNumber = 0;
     localStorage.currentSectionNumber = 0;
     localStorage.overallScore = 0;
+    localStorage.specialCase = '-1';
     
 
     window.location="question.html";
@@ -41,5 +42,8 @@ $(document).ready(function() {
     }
 });
 
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
 
 

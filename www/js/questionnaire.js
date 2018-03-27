@@ -141,16 +141,16 @@ function createDefaultQuestionnaire(){
     ), 
     new Section(
         [
-            new Question("Como está a sua vontade de viver?", [
+            new Question("Você tem fácil acesso a algum método ou oportunidade de se matar?", [
                 new QuestionAlternatives("green", "Não tem acesso a método, nem oportunidade", 0),
                 new QuestionAlternatives("yellow", "Tem acesso ao método, mas não tem oportunidade", 1),
                 new QuestionAlternatives("red", "Tem acesso a método e oportunidade", 2)
             ], -1),
-            new Question("Como está a sua vontade de viver?", [
+            new Question("Algum familiar/amigo/pessoa próxima já tentou suicídio?", [
                 new QuestionAlternatives("green", "Jamais", 0),
                 new QuestionAlternatives("red", "Sim", 2)
             ], -1),
-            new Question("Como está a sua vontade de viver?", [
+            new Question("Algum familiar/amigo/pessoa próxima já cometeu suicídio?", [
                 new QuestionAlternatives("green", "Jamais", 0),
                 new QuestionAlternatives("red", "Sim", 2)
             ], -1),

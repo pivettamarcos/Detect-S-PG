@@ -8,48 +8,44 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
-    
-    <link rel="stylesheet" type="text/css" href="css/question.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/questionnaire.css" />
     <link rel="stylesheet" href="css/material.css">
     <link rel="javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     <script src="js/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-amber.min.css"> 
-    
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-amber.min.css">
+
 
     <title>Detect-S</title>
 </head>
 
 <body>
-    <div id = "pageQuestion">
+    <div id="pageResult">
 
         <div id="header">
-            <h6 id="sectionNumber"> Seção 1 </h6>
-            <h6 id="questionNumber"> Questão 1 </h6>
+            <h6 id="headerText"> Resultado do questionário </h6>
         </div>
 
         <div id="body">
-            <div id="question">
-                <h5 id="questionText"> Como está a sua vontade de viver?</h5>
-                <h6 id="questionIndicator">4/6</h6>
+            <div id="resultDiv">
+                <h6 id="resultText">O resultado da avaliação foi</h6>
+                <button id="resultColor" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"> 22 </button>
+                <h5 id="avaluation">Ruim</h5>
             </div>
-        
+
             <button onclick="returnButtonClick()" id="returnButton" class="mdl-button mdl-js-button mdl-button--icon">
                 <i class="material-icons">chevron_left</i>
             </button>
-        
+
             <button onclick="forwardButtonClick()" id="forwardButton" class="mdl-button mdl-js-button mdl-button--icon">
                 <i class="material-icons">chevron_right</i>
             </button>
-
-            <button id="finishButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-                Finalizar questionário
-            </button>
-
         </div>
 
-        <div id="alternatives">
-            
+
+        <div id="footer">
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
         </div>
     </div>
 
