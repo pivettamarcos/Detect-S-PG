@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "detects.ufcspa.edu.detects"
+        }
+    }
+}
