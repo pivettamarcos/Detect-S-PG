@@ -34,15 +34,19 @@
                 <h6 id="questionIndicator">4/6</h6>
             </div>
         
-            <button onclick="returnButtonClick()" id="returnButton" class="mdl-button mdl-js-button mdl-button--icon">
+            <button onclick="returnButtonClick()" id="returnButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                 <i class="material-icons">chevron_left</i>
             </button>
         
-            <button onclick="forwardButtonClick()" id="forwardButton" class="mdl-button mdl-js-button mdl-button--icon">
+            <button onclick="forwardButtonClick()" id="forwardButton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
                 <i class="material-icons">chevron_right</i>
             </button>
 
-            <button id="finishButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+            <h6 id="errorMissing">
+                Você não respondeu questões da seção 2
+            </h6>
+
+            <button id="finishButton" onclick="finishQuestionnaire()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                 Finalizar questionário
             </button>
 

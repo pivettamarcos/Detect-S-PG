@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    
+    <link rel="stylesheet" type="text/css" href="css/registerPatient.css" />
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <script src="js/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+
+    <title>Detect-S</title>
+</head>
+
+<body>    
+    <div id = "pageRegisterPatient">
+
+        <div id="header">
+            <h6 id="headerText"> Cadastrar paciente </h6>
+        </div>
+
+
+        <div id="body">
+                <form action="#">
+                        <div style="display: block; margin: 0 auto;width: 90%" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input style="border-bottom: red" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample1">
+                            <label style="color: #5d592b" class="mdl-textfield__label" for="sample1">Nome do paciente...</label>
+                            <span class="mdl-textfield__error">Input is not a number!</span>
+                        </div>
+
+                        <div style="display: block; margin: 0 auto;width: 90%" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="date" id="sample2">
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                        </div>
+
+                        <div style="display: block; margin: 0 auto;width: 90%" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample3">
+                                <label style="color: #5d592b" class="mdl-textfield__label" for="sample3">Idade...</label>
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                        </div>
+
+                        <div style="display: block; margin: 0 auto;width: 90%" class="mdl-textfield mdl-js-textfield getmdl-select">
+                            <input type="text" value="" class="mdl-textfield__input" id="sample4" readonly>
+                            <input type="hidden" value="" name="sample4">
+                            <label for="sample4" class="mdl-textfield__label">Hospital...</label>
+                            <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                <li class="mdl-menu__item" data-val="PV">HOSPITAL MATERNO INFANTIL PRESIDENTE VARGAS                                        </li>
+                                <li class="mdl-menu__item" data-val="SNT">HOSPITAL SANTA RITA DO COMPLEXO HOSPITALAR SANTA CASA DE MISERICÓRDIA DE PORTO ALEGRE  </li>
+                            </ul>
+                        </div>
+
+                        <div style="display: block; margin: 0 auto;width: 90%" class="mdl-textfield mdl-js-textfield getmdl-select">
+                            <input type="text" value="" class="mdl-textfield__input" id="sample5" readonly>
+                            <input type="hidden" value="" name="sample5">
+                            <label for="sample5" class="mdl-textfield__label">Unidade...</label>
+                            <ul for="sample5" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                <li class="mdl-menu__item" data-val="HMIPV">HMIPV - UNIDADE DE INTERNAÇÃO PSIQUIÁTRICA - 5º ANDAR                                       </li>
+                                <li class="mdl-menu__item" data-val="HSR">HSR - UNIDADE DE INTERNAÇÃO CIRÚRGICA - 5º ANDAR  </li>
+                            </ul>
+                        </div>
+
+
+                        <div style="display: block; margin: 0 auto;width: 90%"  class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="sample6" ></textarea>
+                            <label class="mdl-textfield__label" for="sample6">Observações...</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" onclick="registerPatient()" style="display: block; margin: 0 auto;background-color: #ffec00; color: rgb(66,66,66)" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                        Finalizar cadastro
+                    </button>
+                </form>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/questionnaire.js"></script>
+    <script src="js/workflowControl.js"></script>
+    <script src="js/registerPatient.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

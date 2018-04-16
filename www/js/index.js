@@ -24,6 +24,7 @@ $('#btnApplyQuestionnaire').click(function() {
     //window.name.workflowControl.setWorkingQuestionnaire(createDefaultQuestionnaire(), 0);
     
 
+    localStorage.patients = JSON.stringify({}, null, 2);;
     localStorage.workingQuestionnaire = JSON.stringify(createDefaultQuestionnaire(0), null, 2);
     localStorage.currentQuestionNumber = 0;
     localStorage.currentSectionNumber = 0;
@@ -39,7 +40,12 @@ $('#btnApplyQuestionnaire').click(function() {
 $(document).ready(function() {
     if($('#pageQuestion')[0]){
         changeLayoutToCurrentQuestion(0);
+    };
+
+    if($('#pageResult')[0]){
+        updateResultScreen();
     }
+
 });
 
 window.location.hash="no-back-button";
